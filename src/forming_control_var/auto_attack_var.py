@@ -69,8 +69,6 @@ def pid_reg(list_k, err, err_name):
     p_i = list_k[0] * err
     i_i = list_k[1] * t * sum_err
     d_i = list_k[2] * (err - err_p) / t
-    # print("error y =", err)
-    # print("e", err, p_i, d_i, i_i)
     var = p_i + d_i + i_i
     if err_name == 'x':
         prev_dx = err
